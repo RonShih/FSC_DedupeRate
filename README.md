@@ -16,7 +16,7 @@ Example with only a file.
 ./dedupe 8 1000000 linux-5.3
 ```
 
-## Steps
+## Steps:
 1. Build a hash table with _hashtablesize_ entries
 2. Read file(s) in _chunksize_ byte stream
 3. Generate fingerprints from each chunk by SHA-1
