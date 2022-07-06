@@ -4,7 +4,7 @@ Derive data deduplication rate of a file in C.
 ## Run this program
 1. run `make` or command as below:
 ```
-gcc program.c -o program -L/usr/local/opt/openssl@1.1/lib -I/usr/local/opt/openssl@1.1/include -lcrypto -lz
+gcc program.c -o program -L/usr/local/opt/openssl@1.1/lib -I/usr/local/opt/openssl@1.1/include -lcrypto -lz -lm
 ```
 2. Execute this program with variable chunksize, hashtablesize, and file(s).  
 Modify argv[ ] in main function to enable multiple files input.
