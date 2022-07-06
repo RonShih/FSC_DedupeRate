@@ -12,7 +12,7 @@ INC = -I/usr/local/opt/openssl@1.1/include
 #TARGET: $@
 #OBJS: $^
 ${TARGET}:${OBJS}
-	${CC} -o $@ $^ ${LIB} ${INC} ${CFLAGS}
+	${CC} -o $@ $^ ${LIB} ${INC} ${CFLAGS} -lm
 
 clean:
 	rm -rf $(TARGET) $(OBJS)
