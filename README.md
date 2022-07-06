@@ -12,6 +12,8 @@ Modify argv[ ] in main function to enable multiple files input.
 ./program chunksize(KB) hashtablesize file1 file2 ...
 ```
 Example with only a file.
+(Note. If the target is a folder, tar it)
+
 ```
 ./dedupe 8 1000000 linux-5.3
 ```
