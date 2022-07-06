@@ -48,7 +48,7 @@ void FileRead(char* filename, uc buffer[])
     printf("Chunk size = %zu bytes\n", chunksize);
     while(!feof(fptr))
     {
-        fgets(buffer, chunksize, fptr);//read every chunksized bytes of data
+        fread(buffer, sizeof(char), chunksize, fptr);;//read every chunksized bytes of data
         chunknum++;
         SHA1(buffer, chunksize, digest);
         char mdString[SHA_DIGEST_LENGTH*2+1];//
